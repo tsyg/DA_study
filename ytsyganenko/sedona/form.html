@@ -1,0 +1,67 @@
+<html>
+	<style type="text/css" title="Main" media="screen,print">
+		
+		
+/* CSS: ipb_help*/
+/************************************************************************/
+/* IP.Board 3 CSS - By Rikki Tissier - (c)2008 Invision Power Services 	*/
+/************************************************************************/
+/* ipb_help.css													*/
+/************************************************************************/
+
+.ipsField_content, .ipsForm_horizontal .ipsField_submit { margin-left: 200px; }
+
+</style>
+
+
+<header >
+    <meta charset="utf-8"/>
+    <title >Sedona</title>
+</header>
+<body >
+<center><img src="img/sedonaBigImage.png" alt="Sedona Landscape" /> </center> 
+<div id="abstract">
+   <H2 align="center">Оставьте свой отзыв</H2>
+   <P>Помогите нашим отелям стать лучше! </P>
+   <P>Оставьте отзыв о них, а также о посещенных вами достопримечательностях </P>
+   <!-- Intentilaly no caps lock in the text above -->
+</div>
+<div >
+   <H2 align="center">Представьтесь пожалуйста</H2>
+   <P> </P>
+   <P>Оставьте отзыв о них, а также о посещенных вами достопримечательностях </P>
+    <!-- Intentilaly no caps lock in the text above -->
+</div>
+
+<div id="outer">
+<fieldset id="person">
+<ul>
+	<li >
+	  <label for='lastname' >Фамилия:</label>
+	  <input  id='lastname' type='text' class='input_text' tabindex='0' />
+	</li>
+	<li >
+	  <label for='name' >Имя:</label>
+	  <input  id='name' type='text' class='input_text' tabindex='0' />
+	</li>
+</ul>
+</fieldset>
+</div>
+<div id="ppl"/>
+
+<button onclick="buttonAppendPerson();">Append</button>
+
+
+<script>
+var orig = document.getElementById("person");
+var endElement = document.getElementById("ppl");
+function buttonAppendPerson() {
+  endElement.appendChild(orig.cloneNode(true));
+};
+</script>
+
+
+
+</body>
+
+</html>
